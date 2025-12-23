@@ -1,53 +1,131 @@
-Gas Specific Heat Capacity Calculator
-A Streamlit web application designed to calculate the mean molar specific heat capacity of ideal gases. It uses linear interpolation on tabulated data to provide precise values between 0°C and a user-specified temperature.
+# 🔬 Gas Specific Heat Capacity Calculator
 
-Features
-Multi-Gas Support: Calculates specific heat capacity for a wide range of gases including O2, N2, H2, CO2, CH4, and many hydrocarbons.
+<div align="center">
 
-Linear Interpolation: Algorithmically determines values for temperatures that fall between data points in the provided JSON dataset.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.0+-red?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Comparison Tool: Allows users to select and compare results for up to 6 different gases side-by-side.
+A modern, interactive web application for calculating the mean molar specific heat capacity of ideal gases with precision and ease.
 
-Interactive UI: Built with Streamlit for a responsive and user-friendly experience.
+</div>
 
-Project Structure
-app.py: The main application script containing the Streamlit UI and interpolation logic.
+---
 
-gasses.json: A JSON database storing specific heat capacity values at various temperature points.
+## ✨ Features
 
-requirements.txt: List of Python dependencies required to run the project.
+- 🌡️ **Multi-Gas Support**: Calculate specific heat capacity for O₂, N₂, H₂, CO₂, CH₄, and numerous hydrocarbons
+- 📊 **Linear Interpolation**: Precisely estimate values between data points using advanced algorithms
+- 🔄 **Compare & Contrast**: Side-by-side analysis of up to 6 different gases simultaneously
+- 💻 **Beautiful UI**: Responsive, intuitive interface powered by Streamlit
+- 📈 **Accurate Data**: Comprehensive temperature range with tabulated reference values
 
-Installation and Setup
-Follow these steps to run the project locally:
+---
 
-Clone the repository:
+## 📁 Project Structure
 
-Bash
-git clone https://github.com/TVOJE_KORISNICKO_IME/IME_PROJEKTA.git
-cd IME_PROJEKTA
-Create a virtual environment:
+```
+AutomaticMolarCalculator/
+├── app.py                  # Main Streamlit application
+├── gasses.json            # Gas heat capacity database
+├── requirements.txt       # Python dependencies
+└── README.md             # This file
+```
 
-Bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
+---
 
-# macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-Install dependencies:
+## 🚀 Quick Start
 
-Bash
-pip install -r requirements.txt
-Usage
-To start the application, run the following command in your terminal:
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
 
-Bash
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/AutomaticMolarCalculator.git
+   cd AutomaticMolarCalculator
+   ```
+
+2. **Create and activate a virtual environment:**
+   
+   **Windows:**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+   
+   **macOS/Linux:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 💡 Usage
+
+Run the application with:
+
+```bash
 streamlit run app.py
-The application will open automatically in your web browser (usually at http://localhost:8501).
+```
 
-Data Source
-The application relies on gasses.json, which must be located in the same directory as app.py. The data is structured with gas names as keys and temperature-value pairs as nested objects.
+The application will open in your default web browser at `http://localhost:8501`
 
-License
-This project is open source.
+### How to Use
+1. Select one or more gases from the dropdown menu
+2. Enter the desired temperature value
+3. Click calculate to get the mean molar specific heat capacity
+4. Compare results across multiple gases in the interactive chart
+
+---
+
+## 📝 File Descriptions
+
+| File | Purpose |
+|------|---------|
+| `app.py` | Core application logic, UI components, and interpolation algorithms |
+| `gasses.json` | Database of gas properties and temperature-dependent heat capacity values |
+| `requirements.txt` | Project dependencies and package versions |
+
+---
+
+## 🔧 Technologies Used
+
+- **Streamlit** - Web application framework
+- **Python** - Core programming language
+- **JSON** - Data storage format
+- **NumPy/Pandas** - Data processing (if used)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit a Pull Request.
+
+---
+
+## 📧 Contact
+
+For questions or suggestions, please open an issue in the GitHub repository.
+
+---
+
+<div align="center">
+
+**Made with ❤️ by [Your Name]**
+
+</div>
