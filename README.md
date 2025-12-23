@@ -126,6 +126,6 @@ For questions or suggestions, please open an issue in the GitHub repository.
 
 <div align="center">
 
-**Made with ❤️ by [Gabrijel]**
+**Made with ❤️ by Gabrijel**
 
 </div>
