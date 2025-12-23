@@ -102,7 +102,6 @@ The application will open in your default web browser at `http://localhost:8501`
 - **Streamlit** - Web application framework
 - **Python** - Core programming language
 - **JSON** - Data storage format
-- **NumPy/Pandas** - Data processing (if used)
 
 ---
 
